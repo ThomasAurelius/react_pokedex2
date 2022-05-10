@@ -28,11 +28,9 @@ export default function PokeCard(props) {
   
   const [pokemonData, setPokemonData] = React.useState({})
   const [loading, setLoading] = React.useState(true)
-  //this is for the modal, but isnt working.
-  const [show, setShow] = React.useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [show, setShow] = React.useState(false);
+  const handleShow = () => setShow(!show);
 
   React.useEffect(() => {
     const getPokemon = async (id) => {
@@ -126,7 +124,7 @@ const types = pokemonData.types.map(item => {
           </div>
         
 
-      <Modal show={show} onHide={handleClose} centered dialogClassName="Modal">
+      <Modal show={show} onHide={handleShow} centered dialogClassName="Modal">
         <Modal.Header >
           <Modal.Title >
             <div className="modal-title">              
@@ -188,8 +186,7 @@ const types = pokemonData.types.map(item => {
         
         </Modal.Body>
         <Modal.Footer>
-        <p><em>Press Esc to close. Button under construction! </em></p>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={handleShow}>
             Close
           </Button>
           
@@ -203,6 +200,6 @@ const types = pokemonData.types.map(item => {
 }
 
 
-//fix close button
-//adjust icon colors
+
+
 
