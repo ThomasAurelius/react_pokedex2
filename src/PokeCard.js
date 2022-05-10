@@ -26,19 +26,14 @@ import waterIcon from './icons/water.svg'
 
 export default function PokeCard(props) {
   
-
+  const [pokemonData, setPokemonData] = React.useState({})
+  const [loading, setLoading] = React.useState(true)
+  //this is for the modal, but isnt working.
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
- 
-  console.log(props)
-  const [pokemonData, setPokemonData] = React.useState({})
-  const [loading, setLoading] = React.useState(true)
-  
-
-  
   React.useEffect(() => {
     const getPokemon = async (id) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`
@@ -79,8 +74,6 @@ const pokemonIcons = {
   water: waterIcon
 }  
 
-
-
 const types = pokemonData.types.map(item => {
     return item.type.name
 })
@@ -113,8 +106,7 @@ const types = pokemonData.types.map(item => {
      }
    
  
-      return (
-        
+      return (        
         <div className="PokeCard" key={nanoid()} id={pokemonData.name} onClick={handleShow} >
           <div className="pokemon" >
           <div className="strangeblueelement" ></div>
@@ -128,19 +120,16 @@ const types = pokemonData.types.map(item => {
               
                <img className="type-icon" src={pokemonIcons[type1]} alt={`${type1} type`} />
                {(type1 == type2) ? <></> : <img className="type-icon" src={pokemonIcons[type2]} alt={`${type1} type`} /> }
-
               </div>  
               <span className="number">#{pokemonData.id}</span>      
-            </div>
-               
+            </div>               
           </div>
         
 
       <Modal show={show} onHide={handleClose} centered dialogClassName="Modal">
         <Modal.Header >
           <Modal.Title >
-            <div className="modal-title">
-              
+            <div className="modal-title">              
               <div className='modal-img-name'>
                 <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemonData.id}.svg`} alt={`${name}`} />
                 <div className="modal-name">
