@@ -1,38 +1,272 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Lato:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: #efefbb;
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+div.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title_img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+h1 {
+  letter-spacing: 3px;
+}
+
+.App h4 {
+  text-align: center;
+}
+
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.pokemon-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  border-radius: 10px;
+  ;
+}
+
+.pokemon {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.pokemon .img-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 2.5px;
+  margin: 5px;
+}
+
+.type-icon {
+  width: 25px;
+  margin-inline: 2.5px;
+}
+
+.pokemon-wrapper {
+  display: flex;
+}
+
+.pokemon .img-container img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-top: 5px;
+}
+
+
+.number {
+
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.pokemon .info .name {
+  margin: 5px 10px 5px;
+  letter-spacing: 0.8px;
+  font-size: 1.3rem;
+}
+
+.PokeCard {
+  width: 300px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.pokemonCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats {
+  display: flex;
+  width: 240px;
+  margin: 0;
+  padding: 0;
+}
+
+.stats p {
+  margin: 0;
+  margin-right: 5px;
+
+}
+
+.abilities {
+  margin-bottom: 10px;
+}
+
+.stats-card-img {
+  max-height: 250px;
+  max-width: 200px;
+}
+
+.moves {
+  padding-bottom: 10px;
+}
+
+
+
+.pokemon:hover,
+.pokemon:focus {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .poke-container {
+    max-width: 360px;
   }
-  to {
+}
+
+.bar {
+  background-color: rgb(192, 192, 192);
+  width: 80%;
+  border-radius: 15px;
+}
+
+.skill {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 0.25%;
+  text-align: right;
+  font-size: 8px;
+  border-radius: 15px;
+}
+
+
+.generation-btns {
+  display: flex;
+  justify-content: center;
+  gap: 2.5px;
+
+}
+
+
+.generation-btns .button {
+  background-color: #ffcb00;
+  color: #00428a;
+  border: 1px solid #00428a;
+  font-weight: 700;
+}
+
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #00428a;
+  opacity: 1;
+  transition: 0.5s;
+  visibility: visible;
+  margin-inline: auto;
+  text-align: center;
+  background: #efefbb;
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+}
+
+#loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  100% {
     transform: rotate(360deg);
   }
+}
+
+.Modal {
+  max-width: 350px;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-img-name {
+  position: relative;
+  display: flex;
+  margin-inline: 10px;
+}
+
+.modal-number {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 2rem;
+}
+
+.modal-icons {
+  display: flex;
+}
+
+.modal-name {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 10px;
+}
+
+.Modal img {
+  width: 100px;
+}
+
+.Modal .type-icon {
+  width: 40px;
+  margin: 2.5px;
+}
+
+
+.pokemon {
+  position: relative;
+  overflow: hidden;
+}
+
+.strangeblueelement {
+  position: absolute;
+  top: -24px;
+  background-color: rgba(255, 255, 255, 0.586);
+  border-radius: 50%;
+  width: 100%;
+  height: 30px;
 }
