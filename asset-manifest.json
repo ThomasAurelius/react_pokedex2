@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/react_pokedex2/static/css/main.0a983f62.css",
+    "main.js": "/react_pokedex2/static/js/main.8d733dc9.js",
+    "static/media/pokemon.png": "/react_pokedex2/static/media/pokemon.44ecd2260886ccb03964.png",
+    "static/media/dragon.svg": "/react_pokedex2/static/media/dragon.7be68bdd50a8726d31107a75e9b7f883.svg",
+    "static/media/fire.svg": "/react_pokedex2/static/media/fire.5c58c6e24c5288994807a442e902cbf2.svg",
+    "static/media/psychic.svg": "/react_pokedex2/static/media/psychic.b5b7f4e113279381acaf4c582078a2ae.svg",
+    "static/media/fairy.svg": "/react_pokedex2/static/media/fairy.d7b29a8bf19ba9aecaf78324122691db.svg",
+    "static/media/bug.svg": "/react_pokedex2/static/media/bug.f9a25ddda09ee2e927b08b89a6430e43.svg",
+    "static/media/rock.svg": "/react_pokedex2/static/media/rock.eea1eac796891a211373893a7f3918c4.svg",
+    "static/media/ice.svg": "/react_pokedex2/static/media/ice.bd8d1e5321aa12fc11265e7e93375537.svg",
+    "static/media/ghost.svg": "/react_pokedex2/static/media/ghost.8c97c1068166fa34722bc16fb5dd3473.svg",
+    "static/media/flying.svg": "/react_pokedex2/static/media/flying.5c90d06778452df3ce81c9f219582f71.svg",
+    "static/media/fighting.svg": "/react_pokedex2/static/media/fighting.372b8c5d52010c05c12c4edb1d45488e.svg",
+    "static/media/poison.svg": "/react_pokedex2/static/media/poison.239752ec99a6f7c0f513e8a5cd6be20a.svg",
+    "static/media/steel.svg": "/react_pokedex2/static/media/steel.e8cb36b995958486ae2ecf76a9c4f591.svg",
+    "index.html": "/react_pokedex2/index.html",
+    "static/media/ground.svg": "/react_pokedex2/static/media/ground.457a08fd1f225c575dd0c30e2a3de253.svg",
+    "static/media/dark.svg": "/react_pokedex2/static/media/dark.b81991e75f526826a49d9a0b033e39bb.svg",
+    "static/media/water.svg": "/react_pokedex2/static/media/water.5df17759051a2e1c0f40e0b6820730d7.svg",
+    "static/media/electric.svg": "/react_pokedex2/static/media/electric.72daa869a6821c8713e429df5baa4eee.svg",
+    "static/media/grass.svg": "/react_pokedex2/static/media/grass.580b538ada83319ec191a117cd6deba1.svg",
+    "static/media/normal.svg": "/react_pokedex2/static/media/normal.2ba66dd583ebf70eb414a0cfd20a48be.svg",
+    "main.0a983f62.css.map": "/react_pokedex2/static/css/main.0a983f62.css.map",
+    "main.8d733dc9.js.map": "/react_pokedex2/static/js/main.8d733dc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a983f62.css",
+    "static/js/main.8d733dc9.js"
+  ]
+}
