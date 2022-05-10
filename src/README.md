@@ -6,7 +6,7 @@
 
 -  [Repo](https://github.com/ThomasAurelius/react_pokedex2 "React Pokedex Repo")
 
--  [Live](https://thomasaurelius.github.io/react_pokedex2/> "Live View")
+-  [Live](https://thomasaurelius.github.io/react_pokedex2/ "Live View")
 
 -  [API](https://pokeapi.co/ "API")
 
