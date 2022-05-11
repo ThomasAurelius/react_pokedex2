@@ -216,6 +216,7 @@ h1 {
 
 .Modal {
   max-width: 350px;
+  margin: 0 auto;
 }
 
 .modal-title {
